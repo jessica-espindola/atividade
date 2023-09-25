@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Comparativo de Linguagens</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+        :root {
+            --fonte: 'Montserrat';
+        }
+
+        * {
+            font-family: var(--fonte);
+            margin: 0px;
+        }
+        header {
+            background-color: rgba(128, 128, 128, 0.541);
+            border-bottom: 2px solid black;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px 0px;
+        }
+
+        main {
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0px   ;
+        }
+
+        td {
+            padding: 10px;
+        }
+        footer {
+            background-color: rgba(128, 128, 128, 0.541);
+            border-top: 2px solid black;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        footer p {
+            font-size: 12px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quadro Comparativo de Linguagens</h1>
+    </header>
+    <main>
+        <table border="1px">
+            <tr>
+                <th>Linguagem</th>
+                <th>Paradigma Principal</th>
+                <th>Modelo de Execução</th>
+                <th>Quanto ao tipo de Dados</th>
+                <th>Vantagens</th>
+                <th>Desvantagens</th>
+                <th>Minha opnião</th>
+                
+
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Principalmente OO + suporta programação imperativa e funcional</td>
+                <td>Interpretada</td>
+                <td>Dinâmica e <strong>fracamente</strong> Tipada</td>
+                <td>
+                    <li>Ampla utilização no desenvolvimento web: interatividade no navegador</li>
+                    <li>Sintaxe semelhante à outras linguagens</li>
+                    <li>Grande número de bibliotecas e frameworks (Ex: Node.js e React)</li>
+                </td>
+                <td>
+                    <li>Propenso a erros: <strong>fracamente</strong> tipada</li>
+                    <li>Comportamente inconsistente em diferentes navegadores</li>
+                </td>
+                <td>É uma linguagem relativamente tranquila de aprender. Possui algumas particularidades que deve-se prestar atenção, mas a prática acaba resolvendo essa questão.</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Orientada à Objetos (OO)</td>
+                <td>Compilada para bytecode e depois interpretada pela virtual machine (JVM)</td>
+                <td>Estática e <strong>fortemente</strong> tipada</td>
+                <td>
+                    <li>Portabilidade: execução na JVM</li>
+                    <li>Alta performance e escalabilidade</li>
+                    <li>Ênfase na segurança</li>
+                </td>
+                <td>
+                    <li>Pode ter uma curva de aprendizagem mais difícil para iniciantes</li>
+                </td>
+                <td>Como iniciei meus estudos com Python, ao aprender Java tive um pouco de dificuldade de entender. Mas aparentemente é uma lingugem amplamente utilizada, o que pode levar à um rápido posicionamento no mercado de trabalho.</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>Scripting e Orientada à Objetos(OO)</td>
+                <td>Interpretada</td>
+                <td>Dinâmico e <strong>fracamente</strong> tipada</td>
+                <td>
+                    <li>Amplamente utilizado no desenvolvimento web</li>
+                    <li>Facilidade de integração com banco de dados</li>
+                    <li>Grande número de bibliotecas e frameworks (Ex: Laravel e WordPress)</li>
+                </td>
+                <td>
+                    <li>Menos eficiente em comparação com outras linguagens</li>
+                    <li>Pode levar à práticas de programação não seguras</li>
+                </td>
+                <td>Não conheço a linguagem, porém como sua aplicabilidade é mais para tecnologias Front-End, recomendo estudá-la caso seja o foco de carreira.</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Multiparadigma (OO, Funcional e Imperativa)</td>
+                <td>Interpretada</td>
+                <td>Dinâmico e <strong>fracamente</strong> tipada</td>
+                <td>
+                    <li>Sintaxe clara e legível</li>
+                    <li>Grande comunidade e bibliotecas (Ex: Django e TensorFlow)</li>
+                    <li>Usado em Ciência de dados e Aprendizagem de Máquina</li>
+                </td>
+                <td>
+                    <li>Menos eficiente em termos de desempenho bruto em comparação com algumas outras linguagens (Ex: C++, C e Rust)</li>
+                </td>
+                <td>Uma boa oportunidade de apresentar o mundo da programação para iniciantes é começar com Python. É facilmente compreendida, porém as boas práticas devem ser ensinadas desde cedo para evitar erros futuros. Além disso, possui uma aplicabilidade variada, o que também facilita um posicionamento no mercado de trabalho.
+                </td>
+            </tr>
+            <tr>
+                <td>C#</td>
+                <td>Orientada à Objetos</td>
+                <td>Compilada para a Common Intermediate Language (CIL) e em seguida, executada na plataforma .NET</td>
+                <td>Estático e <strong>fortemente</strong> tipada</td>
+                <td>
+                    <li>Amplamente usada no desenvolvimento de aplicativos Windows</li>
+                    <li>Forte sistema de tipos</li>
+                    <li>Suporte a LINQ (Language Integrated Query)</li>
+                </td>
+                <td>
+                    <li>Mais restrito a ambientes Windows</li>
+                    <li>Menos uso fora do desenvolvimento de desktop e empresarial</li>
+                </td>
+                <td>Não tive contato com a linguagem e sua aplicabilidade torna-a uma linguagem com um campo de trabalho mais restrito.</td>
+            </tr>
+            <tr>
+                <td>Ruby</td>
+                <td>Orientada à Objetos</td>
+                <td>Interpretada</td>
+                <td>Dinâmico <strong>fracamente</strong> tipada</td>
+                <td>
+                    <li>Sintaxe elegante e expressiva</li>
+                    <li>Usado em desenvolvimento web com o framework Ruby on Rails</li>
+                    <li>Alto nível de produtividade para programadores</li>
+                </td>
+                <td>
+                    <li>Pode ser mais lento que algumas outras linguagens (Ex: C++ e Rust)</li>
+                    <li>Podem ocorrer mais erros de identificar: fracamente tipada</li>
+                </td>
+                <td>Não tive contato com a linguagem mas ultimamente vem aumentando o número de vagas que pedem conhecimento em Ruby. Por ser uma linguagem utlizada no desenvolvimento de tecnologias Front-End, vale a pena o seu estudo para quem deseja seguir carreira.</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>Desenvolvido por: Jéssica Espíndola Viana de Almeida</p>
+        <p>2º Período - Noite</p>
+    </footer>
+</body>
+</html>
